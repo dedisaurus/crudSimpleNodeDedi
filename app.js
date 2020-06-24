@@ -23,7 +23,7 @@ app.use('/todo', todoRouter);
 app.use('/api-docs-sum', swaggerUi.serve, swaggerUi.setup(swaggerSumDocument));
 
 
-mongoose.connect('mongodb://localhost/crud')  
+mongoose.connect('mongodb://127.0.0.1/crud')  
   .then(() => console.log('Berhasil terhubung dengan MongoDB'))
   .catch((err) => console.error(err));
 

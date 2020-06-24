@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nod app.js",
+    "start": "node app.js",
     "test": "node ./node_modules/mocha/bin/mocha ./server-test/server-test.js",
     "test-with-coverage": "nyc --reporter=text mocha ./server-test/server-test.js",
     "server": "node app.js",

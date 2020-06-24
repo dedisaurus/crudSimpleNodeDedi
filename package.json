@@ -3,10 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "nod app.js",
     "test": "node ./node_modules/mocha/bin/mocha ./server-test/server-test.js",
     "test-with-coverage": "nyc --reporter=text mocha ./server-test/server-test.js",
-    "server": "nodemon app.js",
+    "server": "node app.js",
     "db": "mongod --dbpath /usr/local/var/mongodb/ --rest"
   },
   "dependencies": {

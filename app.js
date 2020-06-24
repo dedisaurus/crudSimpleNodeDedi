@@ -39,7 +39,7 @@ app.use(function(err, req, res, next) {
 
 mongoose.Promise = global.Promise;
 
-mongoose.connect('localhost/users_test');
+mongoose.connect('localhost/users_test')
   .then(() => console.log('Berhasil terhubung dengan MongoDB'))
   .catch((err) => console.error(err));
 

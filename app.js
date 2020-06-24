@@ -39,7 +39,7 @@ app.use(function(err, req, res, next) {
 
 mongoose.Promise = global.Promise;
 
-mongoose.connect('mongodb://127.0.0.1/crud')  
+mongoose.connect('mongodb://localhost/crud')  
   .then(() => console.log('Berhasil terhubung dengan MongoDB'))
   .catch((err) => console.error(err));
 
